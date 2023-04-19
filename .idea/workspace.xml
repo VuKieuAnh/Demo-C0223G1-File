@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5ab17b1-5eaf-4af2-aee9-5361280b9748" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/demo2/demo3/ChaFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/CustomerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CustomerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo2/demo3/Cha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo2/demo3/Cha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo2/demo3/ConGai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo2/demo3/ConGai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo2/demo3/ConTrai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo2/demo3/ConTrai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage/ReadWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/ReadWriteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/NormalCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CustomerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CustomerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/VIPCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/VIPCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,15 +31,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
-  <component name="RunManager" selected="Application.demo2.Main">
+}]]></component>
+  <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="views.Client" />
       <module name="DemoC0223G1" />
@@ -98,10 +95,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.demo2.Main" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.ReadWriteFile" />
+        <item itemvalue="Application.demo2.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +112,7 @@
       <updated>1681373196204</updated>
       <workItem from="1681373197443" duration="1792000" />
       <workItem from="1681375003816" duration="1037000" />
-      <workItem from="1681891095503" duration="2195000" />
+      <workItem from="1681891095503" duration="2809000" />
     </task>
     <servers />
   </component>

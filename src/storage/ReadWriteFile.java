@@ -57,7 +57,10 @@ public class ReadWriteFile {
     }
 
     public static void main(String[] args) {
-
+        ReadWriteFile readWriteFile1 = ReadWriteFile.getInstance();
+        List<Customer> customers = new ArrayList<>();
+        customers.add(new Customer(1, "ajfh", "ajf"));
+        readWriteFile1.writeFile(customers);
     }
 
 

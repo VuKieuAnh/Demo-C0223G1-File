@@ -1,7 +1,9 @@
 package views;
 
+import com.sun.org.apache.bcel.internal.util.ClassStack;
 import controller.CustomerManager;
 import model.Customer;
+import model.CustomerFactory;
 import storage.ReadWriteFile;
 
 import java.util.ArrayList;
@@ -12,7 +14,7 @@ public class Client {
     private static List<Customer> c02 = ReadWriteFile.getInstance().readFile();
     private static CustomerManager ka = new CustomerManager("KA",c02);
 
-    public static Customer getNewCustomer(){
+    public static Customer getNewCustomer(String type){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Moi ban nhap vao id");
         int id = scanner.nextInt();
@@ -24,8 +26,10 @@ public class Client {
         Scanner scanner2 = new Scanner(System.in);
         String add = scanner2.nextLine();
 
-        Customer customer = new Customer(id, name, add);
-        return customer;
+        Customer a = null;
+        CustomerFactory customerFactory = new CustomerFactory();
+        a = customerFactory.getObject("V");
+        return a;
     }
 
     public static int getId(){
@@ -36,7 +40,7 @@ public class Client {
 
     public static void main(String[] args) {
         System.out.println(ka.getCustomerList());
-        ka.addNewCustomer(getNewCustomer());
+        ka.addNewCustomer(getNewCustomer("V"));
         System.out.println(ka.getCustomerList());
         Customer customer =  ka.findById(getId());
     }
