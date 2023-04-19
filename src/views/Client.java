@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Client {
-    private static List<Customer> c02 = ReadWriteFile.readFile();
+    private static List<Customer> c02 = ReadWriteFile.getInstance().readFile();
     private static CustomerManager ka = new CustomerManager("KA",c02);
 
     public static Customer getNewCustomer(){

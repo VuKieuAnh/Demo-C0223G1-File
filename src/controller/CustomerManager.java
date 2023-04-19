@@ -14,7 +14,7 @@ public class CustomerManager {
 
     public void addNewCustomer(Customer customer){
         customerList.add(customer);
-        ReadWriteFile.writeFile(customerList);
+        ReadWriteFile.getInstance().writeFile(customerList);
     }
 
     public Customer findById(int id){

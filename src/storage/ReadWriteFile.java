@@ -7,10 +7,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadWriteFile {
+    private ReadWriteFile() {
+    }
+
+    private static ReadWriteFile readWriteFile = null;
+
+    public static ReadWriteFile getInstance(){
+        if (readWriteFile == null)
+            readWriteFile = new ReadWriteFile();
+        return readWriteFile;
+    }
+
     //ghi file (1 danh sach)
     // void
 
-    public static void writeFile(List<Customer> customers){
+    public void writeFile(List<Customer> customers){
         File file = new File("c02.dat");
         try {
             OutputStream os = new FileOutputStream(file);
@@ -27,7 +38,7 @@ public class ReadWriteFile {
 
 
     //doc file (1 list)
-    public static List<Customer> readFile(){
+    public List<Customer> readFile(){
         File file = new File("c02.dat");
         List<Customer> customers = new ArrayList<>();
         try {
